@@ -11,7 +11,7 @@ const MovieApp = () => {
       .then((response) => {
         if (!response.ok) {
           throw new Error(
-            "This is an HTTP Error: The Status is ${response.status}"
+            {"This is an HTTP Error: The Status is ${response.status}"}
           );
         }
         return response.json();
@@ -32,7 +32,7 @@ const MovieApp = () => {
   return (
     <>
       {loading && <div>Data is loading, please wait...</div>}
-      {error && <div>{"There is a problem fetching your data - ${error}"}</div>}
+      {error && <div>{`There is a problem fetching your data - ${error}`}</div>}
       <ul>
         {data &&
           data.map((item) => {
@@ -47,7 +47,7 @@ const MovieApp = () => {
                         ...
                       </p>
                       <hr></hr>
-                      <a href="#">More Info</a>
+                      <a href="https://www.google.com/">More Info</a>
                     </div>
                   </div>
                 </li>
