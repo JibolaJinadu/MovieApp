@@ -10,9 +10,7 @@ const MovieApp = () => {
     fetch("https://swapi.dev/api/films")
       .then((response) => {
         if (!response.ok) {
-          throw new Error(
-            {"This is an HTTP Error: The Status is ${response.status}"}
-          );
+            throw new Error(`This is an HTTP Error: The Status is ${response.status}`);
         }
         return response.json();
       })
