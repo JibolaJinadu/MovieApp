@@ -8,7 +8,7 @@ body {
   background-color: black;
 }
 
-ul {
+.ul {
   list-style-type: none;
   padding: 0px;
   display: grid;
@@ -21,7 +21,7 @@ ul {
   
 }
 
-li{
+.Items{
   border-radius: 7px;
   padding: 0 16px 12px;
   background-image: url("bkg.png");
@@ -29,7 +29,7 @@ li{
   
 }
 
-li:hover{
+.Items:hover{
   box-shadow: 0px 0px 10px 4px rgb(70, 156, 193);
 }
 
@@ -41,7 +41,6 @@ li:hover{
   display: block;
   margin: 20px auto 30px auto;
   width: 32%;
-
 }
 
 
@@ -73,6 +72,30 @@ a{
 }
 
 h1{
-  color: white;
+  color: grey;
 }
 
+.Details{
+  padding: 10px 40px;
+  color:grey;
+}
+
+.Header{
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.Section-list{
+  display: grid;
+  grid-template-columns: repeat(3,35%);
+  width: 80%;
+  padding-left: 0;
+  margin-left: 0;
+  
+}
+
+.Section{
+  border-top: 1px solid grey;
+  padding: 10px 0;
+}
